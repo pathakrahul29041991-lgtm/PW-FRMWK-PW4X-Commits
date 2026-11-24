@@ -1,13 +1,37 @@
 {
   "name": "playwright",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {},
+  "description": "Scripts related to Advanced playwright framework.",
   "keywords": [],
+  "homepage": "https://github.com/pathakrahul29041991-lgtm/PW-FRMWK-PW4X-Commits#readme",
+  "bugs": {
+    "url": "https://github.com/pathakrahul29041991-lgtm/PW-FRMWK-PW4X-Commits/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pathakrahul29041991-lgtm/PW-FRMWK-PW4X-Commits.git"
+  },
   "type": "commonjs",
+  "main": "./lib/index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "build": "tsc",
+    "lint": "tslint -c tslint.json src/**/*.ts",
+    "prepublish": "npm run build"
+  },
   "devDependencies": {
     "@playwright/test": "^1.65.0",
     "@types/node": "^26.6.6"
-  }
+  },
+  "dependencies": {
+    "tslint": "^5.20.1",
+    "typescript": "^7.0.2"
+  },
+  "files": [
+    "./bin/*",
+    "./lib/*"
+  ],
+  "typings": "./lib/index.d.ts"
 }
