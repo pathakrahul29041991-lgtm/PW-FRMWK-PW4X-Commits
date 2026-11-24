@@ -1,7 +1,9 @@
-enum Environment {
-    Dev = "https://dev.api.com",
-    Staging = "https://staging.api.com",
-    QA = "https://qa.api.com",
-    Prod = "https://api.com"
+enum TestStatus{
+    Pass = "PASS",
+    Fail = "FAIL",
+    Skip = "SKIP",
+    Pending = "PENDING",
+    Blocked = "BLOCKED"
 }
-console.log(Environment.QA);
+
+console.log(TestStatus.Pass);
